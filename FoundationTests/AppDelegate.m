@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "FoundationExamples.h"
+#import "Person.h"
+#import "PersonContainer.h"
 
 @interface AppDelegate ()
 
@@ -17,8 +19,28 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
-    [FoundationExamples run];
+    
+    //RUN FUNDATION EXAMPLES.
+    //[FoundationExamples run];
+    
+    //PERSON CONTAINER EXERCISE
+    Person *juan = [[Person alloc]initWithName:@"Juan" City:@"Valladolid" AndPhoneNumber:@"666666666"];
+    Person *paco = [[Person alloc]initWithName:@"Paco" City:@"Pacodolid" AndPhoneNumber:@"999999999"];
+    
+    PersonContainer *pc = [[PersonContainer alloc] init];
+    
+    [pc addPerson:juan];
+    [pc addPerson:paco];
+    
+    if ([pc save]) {
+        NSLog(@"Saved PersonContainer persons");
+    } else {
+        NSLog(@"Something went wrong and not saved persons");
+    }
+    
+    NSArray *persons = [pc getSaved];
+    
+    NSLog(@"Saved persons: %@", persons);
     
     return YES;
 }

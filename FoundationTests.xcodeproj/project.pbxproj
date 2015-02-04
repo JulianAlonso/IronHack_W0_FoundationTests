@@ -15,6 +15,8 @@
 		01D1E0FC1A825A3900CFBBB8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01D1E0FA1A825A3900CFBBB8 /* LaunchScreen.xib */; };
 		01D1E1081A825A3900CFBBB8 /* FoundationTestsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D1E1071A825A3900CFBBB8 /* FoundationTestsTests.m */; };
 		01D1E1151A825A8100CFBBB8 /* FoundationExamples.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D1E1141A825A8100CFBBB8 /* FoundationExamples.m */; };
+		01D1E1181A8268A800CFBBB8 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D1E1171A8268A800CFBBB8 /* Person.m */; };
+		01D1E11B1A8269B200CFBBB8 /* PersonContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D1E11A1A8269B200CFBBB8 /* PersonContainer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,10 @@
 		01D1E1121A825A7000CFBBB8 /* FoundationExampleObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoundationExampleObject.h; sourceTree = "<group>"; };
 		01D1E1131A825A8100CFBBB8 /* FoundationExamples.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoundationExamples.h; sourceTree = "<group>"; };
 		01D1E1141A825A8100CFBBB8 /* FoundationExamples.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoundationExamples.m; sourceTree = "<group>"; };
+		01D1E1161A8268A800CFBBB8 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		01D1E1171A8268A800CFBBB8 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		01D1E1191A8269B200CFBBB8 /* PersonContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonContainer.h; sourceTree = "<group>"; };
+		01D1E11A1A8269B200CFBBB8 /* PersonContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonContainer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +136,10 @@
 				01D1E1121A825A7000CFBBB8 /* FoundationExampleObject.h */,
 				01D1E1131A825A8100CFBBB8 /* FoundationExamples.h */,
 				01D1E1141A825A8100CFBBB8 /* FoundationExamples.m */,
+				01D1E1161A8268A800CFBBB8 /* Person.h */,
+				01D1E1171A8268A800CFBBB8 /* Person.m */,
+				01D1E1191A8269B200CFBBB8 /* PersonContainer.h */,
+				01D1E11A1A8269B200CFBBB8 /* PersonContainer.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -236,7 +246,9 @@
 			files = (
 				01D1E0F41A825A3900CFBBB8 /* ViewController.m in Sources */,
 				01D1E1151A825A8100CFBBB8 /* FoundationExamples.m in Sources */,
+				01D1E1181A8268A800CFBBB8 /* Person.m in Sources */,
 				01D1E0F11A825A3900CFBBB8 /* AppDelegate.m in Sources */,
+				01D1E11B1A8269B200CFBBB8 /* PersonContainer.m in Sources */,
 				01D1E0EE1A825A3900CFBBB8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
