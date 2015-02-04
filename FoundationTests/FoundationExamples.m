@@ -10,11 +10,10 @@
 @implementation FoundationExamples
 
 + (void)run {
-    [[[self alloc] init] runContainerExamples];
+    [[[self alloc] init] runArrayExamples];
 }
 
-
-- (void)runContainerExamples {
+- (void)runStringExamples {
     NSString *s = @"pepe";
     NSString *p = s;
     
@@ -49,16 +48,9 @@
     
     NSString *otherFile = [@"/Documents/" stringByAppendingPathComponent:@"File.txt"];
     NSLog(@"%@", otherFile);
-    
-    
 }
 
-- (BOOL)readyToRun {
-    NSLog(@"I'm ready.");
-    return YES;
-}
-
-- (void)runExamples {
+- (void)runClassExamples {
     NSLog(@"My class is NSNumber?: %i", [self isKindOfClass:[NSNumber class]]);
     NSLog(@"My clas is NSObject?: %i", [self isKindOfClass:[NSObject class]]);
     NSLog(@"My class is NSObject Memer?: %i", [self isMemberOfClass:[NSObject class]]);
@@ -80,6 +72,25 @@
         NSLog(@"I don't support the selector");
     }
     
+}
+
+- (void)runArrayExamples {
+    
+    NSArray *arr = [[NSArray alloc]initWithObjects:@"Luis",@"Pepe",@"Paco", nil];
+    NSString *path = [[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:@"Array.plist"];
+    
+    [arr writeToFile:path atomically:YES];
+    
+    NSArray *saved = [NSArray arrayWithContentsOfFile:path];
+    NSLog(@"%@", path);
+    NSLog(@"%@", saved);
+    
+    
+}
+
+- (BOOL)readyToRun {
+    NSLog(@"I'm ready.");
+    return YES;
 }
 
 @end

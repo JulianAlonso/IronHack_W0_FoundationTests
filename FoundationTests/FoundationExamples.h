@@ -16,8 +16,10 @@
 
 + (void)run;
 
-- (void)runExamples;
+- (void)runClassExamples;
 
-- (void)runContainerExamples;
+- (void)runStringExamples;
+
+- (void)runArrayExamples;
 
 @end
