@@ -14,6 +14,7 @@
 		01D1E0F91A825A3900CFBBB8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01D1E0F81A825A3900CFBBB8 /* Images.xcassets */; };
 		01D1E0FC1A825A3900CFBBB8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01D1E0FA1A825A3900CFBBB8 /* LaunchScreen.xib */; };
 		01D1E1081A825A3900CFBBB8 /* FoundationTestsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D1E1071A825A3900CFBBB8 /* FoundationTestsTests.m */; };
+		01D1E1151A825A8100CFBBB8 /* FoundationExamples.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D1E1141A825A8100CFBBB8 /* FoundationExamples.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,9 @@
 		01D1E1011A825A3900CFBBB8 /* FoundationTestsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoundationTestsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01D1E1061A825A3900CFBBB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01D1E1071A825A3900CFBBB8 /* FoundationTestsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoundationTestsTests.m; sourceTree = "<group>"; };
+		01D1E1121A825A7000CFBBB8 /* FoundationExampleObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoundationExampleObject.h; sourceTree = "<group>"; };
+		01D1E1131A825A8100CFBBB8 /* FoundationExamples.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoundationExamples.h; sourceTree = "<group>"; };
+		01D1E1141A825A8100CFBBB8 /* FoundationExamples.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoundationExamples.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 		01D1E0EA1A825A3900CFBBB8 /* FoundationTests */ = {
 			isa = PBXGroup;
 			children = (
+				01D1E1111A825A6200CFBBB8 /* Model */,
 				01D1E0EF1A825A3900CFBBB8 /* AppDelegate.h */,
 				01D1E0F01A825A3900CFBBB8 /* AppDelegate.m */,
 				01D1E0F21A825A3900CFBBB8 /* ViewController.h */,
@@ -117,6 +122,16 @@
 				01D1E1061A825A3900CFBBB8 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		01D1E1111A825A6200CFBBB8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				01D1E1121A825A7000CFBBB8 /* FoundationExampleObject.h */,
+				01D1E1131A825A8100CFBBB8 /* FoundationExamples.h */,
+				01D1E1141A825A8100CFBBB8 /* FoundationExamples.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01D1E0F41A825A3900CFBBB8 /* ViewController.m in Sources */,
+				01D1E1151A825A8100CFBBB8 /* FoundationExamples.m in Sources */,
 				01D1E0F11A825A3900CFBBB8 /* AppDelegate.m in Sources */,
 				01D1E0EE1A825A3900CFBBB8 /* main.m in Sources */,
 			);
