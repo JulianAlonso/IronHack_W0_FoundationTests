@@ -11,3 +11,5 @@ Person container with
 * count
 * findAll
 
+Features:
+* Load people from .json
