@@ -13,16 +13,20 @@
 
 @property (readonly, nonatomic)NSString *path;
 @property (strong, nonatomic)NSMutableArray *persons;
+
 @end
 
 @implementation PersonContainer
 #pragma mark - Inits
 - (instancetype)init {
+
     self = [super init];
+    
     if (self) {
         _path = [[[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:@"PersonContainer.plist"] copy];
         _persons = [[NSMutableArray alloc] init];
     }
+    
     return self;
 }
 #pragma mark - Methods

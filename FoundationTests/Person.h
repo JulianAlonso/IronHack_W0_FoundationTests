@@ -13,10 +13,24 @@
 @property (nonatomic, copy)NSString *name;
 @property (nonatomic, copy)NSString *city;
 @property (nonatomic, copy)NSString *phoneNumber;
+@property (nonatomic, copy)NSString *imageUrl;
 
-- (instancetype)initWithName:(NSString *)name City:(NSString *)city AndPhoneNumber:(NSString *)phoneNumber NS_DESIGNATED_INITIALIZER;
-- (instancetype)initWithName:(NSString *)name AndCity:(NSString *)city;
+- (instancetype)initWithName:(NSString *)name
+                        City:(NSString *)city
+                 PhoneNumber:(NSString *)phoneNumber
+                 AndImageUrl:(NSString *)imageUrl
+NS_DESIGNATED_INITIALIZER;
+
+- (instancetype)initWithName:(NSString *)name
+                        City:(NSString *)city
+                 AndPhoneNumber:(NSString *)phoneNumber;
+
+
+- (instancetype)initWithName:(NSString *)name
+                     AndCity:(NSString *)city;
+
 - (instancetype)initWithName:(NSString *)name;
+
 - (instancetype)init;
 
 - (NSString *)description;

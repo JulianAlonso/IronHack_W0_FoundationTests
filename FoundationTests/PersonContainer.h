@@ -14,11 +14,15 @@
 - (instancetype)init;
 
 - (BOOL)addPerson:(Person *)person;
+
 - (BOOL)removePerson:(Person *)person;
+
 - (NSUInteger *)count;
+
 - (NSArray *)findAll;
 
 - (BOOL)save;
+
 - (NSArray *)getSaved;
 
 

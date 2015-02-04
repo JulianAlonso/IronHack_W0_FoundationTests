@@ -43,7 +43,6 @@
 		01D1E1011A825A3900CFBBB8 /* FoundationTestsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoundationTestsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01D1E1061A825A3900CFBBB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01D1E1071A825A3900CFBBB8 /* FoundationTestsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoundationTestsTests.m; sourceTree = "<group>"; };
-		01D1E1121A825A7000CFBBB8 /* FoundationExampleObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoundationExampleObject.h; sourceTree = "<group>"; };
 		01D1E1131A825A8100CFBBB8 /* FoundationExamples.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoundationExamples.h; sourceTree = "<group>"; };
 		01D1E1141A825A8100CFBBB8 /* FoundationExamples.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoundationExamples.m; sourceTree = "<group>"; };
 		01D1E1161A8268A800CFBBB8 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
@@ -133,7 +132,6 @@
 		01D1E1111A825A6200CFBBB8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				01D1E1121A825A7000CFBBB8 /* FoundationExampleObject.h */,
 				01D1E1131A825A8100CFBBB8 /* FoundationExamples.h */,
 				01D1E1141A825A8100CFBBB8 /* FoundationExamples.m */,
 				01D1E1161A8268A800CFBBB8 /* Person.h */,
