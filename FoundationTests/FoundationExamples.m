@@ -10,7 +10,17 @@
 @implementation FoundationExamples
 
 + (void)run {
-    [[[self alloc] init] runArrayExamples];
+    FoundationExamples *fe = [[self alloc] init];
+    
+    if (fe && fe.readyToRun) {
+        [fe runDictionaryExamples];
+    }
+    
+}
+
+- (BOOL)readyToRun {
+    NSLog(@"I'm ready.");
+    return YES;
 }
 
 - (void)runStringExamples {
@@ -82,15 +92,42 @@
     [arr writeToFile:path atomically:YES];
     
     NSArray *saved = [NSArray arrayWithContentsOfFile:path];
-    NSLog(@"%@", path);
+    NSLog(@"PATH: %@", path);
     NSLog(@"%@", saved);
     
     
 }
 
-- (BOOL)readyToRun {
-    NSLog(@"I'm ready.");
-    return YES;
+- (void)runDictionaryExamples {
+    
+    NSDictionary *dict = [NSDictionary dictionaryWithObject:@"This is the NSString one" forKey:@1];
+    
+    NSString *path = [[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:@"Dictionary.plist"];
+    
+    [dict writeToFile:path atomically:YES];
+    
+    NSDictionary *saved = [NSDictionary dictionaryWithContentsOfFile:path];
+    
+    NSLog(@"PATH: %@", path);
+    NSLog(@"%@", saved);
+    
+    
+    NSMutableDictionary *mdict = [dict mutableCopy];
+    [mdict setObject:@14 forKey:@2];
+    
+    NSLog(@"%@", dict);
+    NSLog(@"%@", mdict);
+    
+    NSLog(@"Keys: %@", [dict allKeys]);
+    NSLog(@"Values: %@", [dict allValues]);
+    
+    NSLog(@"Printing one for one...");
+    
+    for (id key in [mdict allKeys]) {
+        NSLog(@"Key: %@ Value: %@", key, mdict[key]);
+    }
+    
+    
 }
 
 @end
