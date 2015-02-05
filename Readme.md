@@ -15,3 +15,5 @@ Features:
 * Load people from .json
 
 All from Iron Hack class.
+
+Julian Alonso
